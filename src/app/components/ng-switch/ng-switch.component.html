@@ -1,0 +1,13 @@
+<div [ngSwitch]="alerta">
+
+  <div *ngSwitchCase="'primary'" class="alert alert-primary" role="alert">
+    This is a primary alert—check it out!
+  </div>
+
+  <div *ngSwitchDefault class="alert alert-danger" role="alert">
+    This is a danger alert—check it out!
+  </div>
+
+</div>
+
+<button type="button" class="btn bt-succes" (click)="alerta='primary'">cambiar</button>
